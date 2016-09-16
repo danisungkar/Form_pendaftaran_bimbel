@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="id.sch.smktelkom_mlg.tugas1.xiirpl4014.form_pendaftaran_bimbel.MainActivity">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="FORM PENDAFTARAN BIMBEL"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_logo"
+            android:tint="#59f6f6" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView"
+            android:text="Nama" />
+
+        <EditText
+            android:id="@+id/editTextNM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editTextNM"
+            android:text="Alamat" />
+
+        <EditText
+            android:id="@+id/editTextAL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editTextAL"
+            android:text="Nomor Telepon Siswa" />
+
+        <EditText
+            android:id="@+id/editTextNOS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView3"
+            android:inputType="numberSigned" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editTextNOS"
+            android:text="Nomor Telepon Orangtua" />
+
+        <EditText
+            android:id="@+id/editTextNOO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView4"
+            android:inputType="numberSigned" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editTextNOO"
+            android:text="Asal Sekolah" />
+
+        <EditText
+            android:id="@+id/editTextAS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editTextAS"
+            android:text="Tingkat Sekolah" />
+
+        <RadioGroup
+            android:id="@+id/radiogroupTS"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignEnd="@+id/textView3"
+            android:layout_alignRight="@+id/textView3"
+            android:layout_below="@+id/textView5"
+            android:layout_marginTop="5dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonSD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="SD" />
+
+            <RadioButton
+                android:id="@+id/radioButtonSMP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:checked="false"
+                android:text="SMP" />
+
+            <RadioButton
+                android:id="@+id/radioButtonSMA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:checked="false"
+                android:text="SMA" />
+
+            <RadioButton
+                android:id="@+id/radioButtonSMK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:checked="false"
+                android:text="SMK" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radiogroupTS"
+            android:layout_marginTop="5dp"
+            android:inputType="numberSigned"
+            android:text="Kelas" />
+
+        <EditText
+            android:id="@+id/editTextKL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextKL"
+            android:text="Pilihan Jam Bimbel" />
+
+        <Spinner
+            android:id="@+id/spinnerJM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView8"
+            android:entries="@array/jam">
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerJM"
+            android:text="Pilihan Hari Bimbel" />
+
+        <CheckBox
+            android:id="@+id/checkBoxSenin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView9"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_toRightOf="@+id/textView"
+            android:text="Senin" />
+
+        <CheckBox
+            android:id="@+id/checkBoxSelasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBoxSenin"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_toRightOf="@+id/textView"
+            android:text="Selasa" />
+
+        <CheckBox
+            android:id="@+id/checkBoxRabu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBoxSelasa"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_toRightOf="@+id/textView"
+            android:text="Rabu" />
+
+        <CheckBox
+            android:id="@+id/checkBoxKamis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView9"
+            android:layout_toEndOf="@+id/radiogroupTS"
+            android:layout_toRightOf="@+id/radiogroupTS"
+            android:text="Kamis" />
+
+        <CheckBox
+            android:id="@+id/checkBoxJumat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/checkBoxRabu"
+            android:layout_alignLeft="@+id/checkBoxKamis"
+            android:layout_alignStart="@+id/checkBoxKamis"
+            android:text="Jumat" />
+
+        <CheckBox
+            android:id="@+id/checkBoxSabtu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonOk"
+            android:layout_alignLeft="@+id/checkBoxJumat"
+            android:layout_alignStart="@+id/checkBoxJumat"
+            android:text="Sabtu" />
+
+        <Button
+            android:id="@+id/buttonOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBoxRabu"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="OK" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonOk"
+            android:layout_marginTop="25dp"
+            android:text="Nama                          : " />
+
+        <TextView
+            android:id="@+id/textViewHSnama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonOk"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@id/textView11" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView11"
+            android:layout_marginTop="10dp"
+            android:text="Alamat                        : " />
+
+        <TextView
+            android:id="@+id/textViewHSalamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewHSnama"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/textView12" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView12"
+            android:layout_marginTop="10dp"
+            android:text="No Tlpn Siswa           : " />
+
+        <TextView
+            android:id="@+id/textViewHSnosis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewHSalamat"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/textView13" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView13"
+            android:layout_marginTop="10dp"
+            android:text="No Tlpn Orangtua     : " />
+
+        <TextView
+            android:id="@+id/textViewHSnoortu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewHSnosis"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/textView14" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView14"
+            android:layout_marginTop="10dp"
+            android:text="Asal Sekolah              : " />
+
+        <TextView
+            android:id="@+id/textViewHSasal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewHSnoortu"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/textView15" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView15"
+            android:layout_marginTop="10dp"
+            android:text="Tingkat Sekolah        : " />
+
+        <TextView
+            android:id="@+id/textViewHStingkat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewHSasal"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/textView16" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView16"
+            android:layout_marginTop="10dp"
+            android:text="Kelas                            : " />
+
+        <TextView
+            android:id="@+id/textViewHSkelas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewHStingkat"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/textView17" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView17"
+            android:layout_marginTop="10dp"
+            android:text="Jam Bimbel                : " />
+
+        <TextView
+            android:id="@+id/textViewHSjam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewHSkelas"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/textView18" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView18"
+            android:layout_marginTop="10dp"
+            android:text="Hari Bimbel                 : " />
+
+        <TextView
+            android:id="@+id/textViewHShari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewHSjam"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/textView19" />
+    </RelativeLayout>
+</ScrollView>
