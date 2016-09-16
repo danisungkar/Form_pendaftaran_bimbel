@@ -3,7 +3,7 @@
     <string-array name="jam">
         <item>----------Pilih Jam----------</item>
         <item>Jam Siang (13:00 - 15.00)</item>
-        <item>Jam Sore (15:30 - 17.30)</item>
+        <item>Jam Sore  (15:30 - 17.30)</item>
         <item>Jam Malam (18:30 - 20.30)</item>
     </string-array>
 </resources>
